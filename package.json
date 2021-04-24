@@ -1,0 +1,17 @@
+{
+  "name": "dev-badge-icon",
+  "version": "1.0.9",
+  "description": "dev badge icons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "badge",
+    "icons",
+    "svg",
+    "base64"
+  ],
+  "author": "eleonora",
+  "license": "ISC"
+}

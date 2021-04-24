@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="color-scheme" content="dark light" />
+<meta name="supported-color-schemes" content="dark light">
+<head>
+  <style>
+@media (prefers-color-scheme: light) {body {background-color: rgba(255, 255, 255, 0.849);}}
+@media (prefers-color-scheme: dark) {body {background-color:#2b2c33;}}
+    img {
+      width: 100px;
+      height: 40px;
+    }
+    .column {
+      float: left;
+      padding: 5px;
+      padding-bottom: 0.3em;
+    }
+    .flex {
+      background: #555555;
+      padding: 10px;
+      margin-bottom: 5px;
+      border: 1px solid #555555;
+      position: relative;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    figcaption {
+      color: rgb(134, 97, 255);
+      border: none;
+      position: relative;
+      padding-bottom: 0.3em;
+      font-size: 1em;
+      text-align: center;
+      cursor: none;
+    }
+    figcaption:hover {
+      color: #e65704e1;
+    }
+    figcaption:before,
+    figcaption:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 1px;
+      width: 0;
+      background: #e00707;
+      transition: 1000ms ease all;
+    }
+    figcaption:after {
+      right: inherit;
+      top: inherit;
+      left: 0;
+      bottom: 0;
+    }
+    figcaption:hover:before,
+    figcaption:hover:after {
+      width: 100%;
+    }
+  </style>
+   <script src="https://unpkg.com/badgen"></script>
+</head>
+<body>
+  <div class="row">
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/airbnb.svg " alt="">
+      <figcaption>airbnb</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/apple.svg " alt="">
+      <figcaption>apple</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/appveyor.svg " alt="">
+      <figcaption>appveyor</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/atom.svg " alt="">
+      <figcaption>atom</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/awesome.svg " alt="">
+      <figcaption>awesome</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/azure.svg " alt="">
+      <figcaption>azure</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/azurepipelines.svg " alt="">
+      <figcaption>azurepipelines</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/bitcoin.svg " alt="">
+      <figcaption>bitcoin</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/bitcoin-lightning.svg " alt="">
+      <figcaption>lightning</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/bundlephobia.svg " alt="">
+      <figcaption>bundlephobia</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/buymeacoffee.svg " alt="">
+      <figcaption>buymeacoffee</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/chrome.svg " alt="">
+      <figcaption>chrome</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/circleci.svg " alt="">
+      <figcaption>circleci</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/cocoapods.svg " alt="">
+      <figcaption>cocoapods</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/codacy.svg " alt="">
+      <figcaption>codacy</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/codebeat.svg " alt="">
+      <figcaption>codebeat</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/codeclimate.svg " alt="">
+      <figcaption>codeclimate</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/codecov.svg " alt="">
+      <figcaption>codecov</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/commonwl.svg " alt="">
+      <figcaption>commonwl</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/deepscan.svg " alt="">
+      <figcaption>deepscan</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/dependabot.svg " alt="">
+      <figcaption>dependabot</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/devrant.svg " alt="">
+      <figcaption>devrant</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/discord.svg " alt="">
+      <figcaption>discord</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/dockbit.svg " alt="">
+      <figcaption>dockbit</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/docker.svg " alt="">
+      <figcaption>docker</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/eclipse.svg " alt="">
+      <figcaption>eclipse</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/firefox.svg " alt="">
+      <figcaption>firefox</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/flow.svg " alt="">
+      <figcaption>flow</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/git.svg " alt="">
+      <figcaption>git</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/github.svg " alt="">
+      <figcaption>github</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/gitlab.svg " alt="">
+      <figcaption>gitlab</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/gitter.svg " alt="">
+      <figcaption>gitter</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/googleplay.svg " alt="">
+      <figcaption>googleplay</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/graphql.svg " alt="">
+      <figcaption>graphql</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/haskell.svg " alt="">
+      <figcaption>haskell</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/jira.svg " alt="">
+      <figcaption>jira</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/jsdelivr.svg " alt="">
+      <figcaption>jsdelivr</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/keybase.svg " alt="">
+      <figcaption>keybase</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/kofi.svg " alt="">
+      <figcaption>kofi</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/lgtm.svg " alt="">
+      <figcaption>lgtm</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/libraries.svg " alt="">
+      <figcaption>libraries</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/maven.svg " alt="">
+      <figcaption>maven</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/medium.svg " alt="">
+      <figcaption>medium</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/mozilla.svg " alt="">
+      <figcaption>mozilla</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/now.svg " alt="">
+      <figcaption>now</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/npm.svg " alt="">
+      <figcaption>npm</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/nuget.svg " alt="">
+      <figcaption>nuget</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/packagephobia.svg " alt="">
+      <figcaption>packagephobia</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/patreon.svg " alt="">
+      <figcaption>patreon</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/peertube.svg " alt="">
+      <figcaption>peertube</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/postgresql.svg " alt="">
+      <figcaption>postgresql</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/pypi.svg " alt="">
+      <figcaption>pypi</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/rss.svg " alt="">
+      <figcaption>rss</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/ruby.svg " alt="">
+      <figcaption>ruby</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/scrutinizer.svg " alt="">
+      <figcaption>scrutinizer</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/securityheaders.svg " alt="">
+      <figcaption>securityheaders</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/slack.svg " alt="">
+      <figcaption>slack</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/sonarqube.svg " alt="">
+      <figcaption>sonarqube</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/sourcegraph.svg " alt="">
+      <figcaption>sourcegraph</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/telegram.svg " alt="">
+      <figcaption>telegram</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/terminal.svg " alt="">
+      <figcaption>terminal</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/terraform.svg " alt="">
+      <figcaption>terraform</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/travis.svg " alt="">
+      <figcaption>travis</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/twitter.svg " alt="">
+      <figcaption>twitter</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/typescript.svg " alt="">
+      <figcaption>typescript</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/vercel.svg " alt="">
+      <figcaption>vercel</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/visualstudio.svg " alt="">
+      <figcaption>visualstudio</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/wiki.svg " alt="">
+      <figcaption>wiki</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/windows.svg " alt="">
+      <figcaption>windows</figcaption>
+    </div>
+    <div class="column">
+      <img class="flex" src="https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/zipfile.svg " alt="">
+      <figcaption>zipfile</figcaption>
+    </div>
+  </div>
+</html>
