@@ -2,12 +2,15 @@
 - ![](https://dev-badge.eleonora.workers.dev/npm/dw/dev-badge-icon?icon=npm&style=flat&scale=1)
 ![](https://dev-badge.eleonora.workers.dev/npm/dm/dev-badge-icon?icon=npm&style=flat&scale=1)
 ![](https://dev-badge.eleonora.workers.dev/npm/dy/dev-badge-icon?icon=npm&style=flat&scale=1)
+---
 ### ![](https://dev-badge.eleonora.workers.dev/npm/v/dev-badge-icon?icon=bundlephobia&label=bundlephobia%20dev-badge-icon&scale=1.2&color=cyan&labelColor=red)  
 - ![](https://dev-badge.eleonora.workers.dev/bundlephobia/min/dev-badge-icon?icon=bundlephobia&style=flat&scale=1)
 ![](https://dev-badge.eleonora.workers.dev/bundlephobia/minzip/dev-badge-icon?icon=bundlephobia&style=flat&scale=1)
+---
 ### ![](https://dev-badge.eleonora.workers.dev/npm/v/dev-badge-icon?icon=packagephobia&label=packagephobia%20dev-badge-icon&scale=1.2&color=cyan&labelColor=red) 
 - ![](https://dev-badge.eleonora.workers.dev/packagephobia/publish/dev-badge-icon?icon=packagephobia&style=flat&scale=1)
 ![](https://dev-badge.eleonora.workers.dev/packagephobia/install/dev-badge-icon?icon=packagephobia&style=flat&scale=1)
+---
 ### ![](https://dev-badge.eleonora.workers.dev/npm/v/dev-badge-icon?icon=jsdelivr&label=jsdelivr%20dev-badge-icon&scale=1.2&color=cyan&labelColor=red) 
 - ![](https://dev-badge.eleonora.workers.dev/jsdelivr/hits/month/npm/dev-badge-icon?icon=jsdelivr&style=flat&scale=1)
 ![](https://dev-badge.eleonora.workers.dev/jsdelivr/rank/month/npm/dev-badge-icon?icon=jsdelivr&style=flat&scale=1)
