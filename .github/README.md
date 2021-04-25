@@ -26,8 +26,8 @@
 ---: | :--- | :---: | :---:
 Npm | [![npm Version][NPM VERSION BADGE]][NPM PAGE] | [&#128279;][jsdelivr NPM] | [&#128279;][unpkg NPM]
 Npm | [![npm Download][NPM DOWNLOAD BADGE]][NPM PAGE] | [&#128279;][jsdelivr NPM] | [&#128279;][unpkg NPM]
-Npm | [![npm License][LICENSE BADGE]][LICENSE PAGE] | [&#128279;][jsdelivr NPM] | [&#128279;][unpkg NPM]
-Icon| [![example Badge][V2 BADGE]][V2 PAGE] | [&#128279;][jsdelivr V2] | [&#128279;][unpkg V2]
+Npm | [![npm License][LICENSE BADGE]](LICENSE) | [&#128279;][jsdelivr NPM] | [&#128279;][unpkg NPM]
+Icon| [![example Badge][V2 BADGE]](icons) | [&#128279;][jsdelivr V2] | [&#128279;][unpkg V2]
 &nbsp;
 ---
 - ##### Based on *[badgen-icons](https://www.npmjs.com/package/badgen-icons)*.
