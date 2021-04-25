@@ -2,15 +2,12 @@
 - [![](https://dev-badge.eleonora.workers.dev/npm/dw/dev-badge-icon?icon=npm&style=flat&scale=1)][NPM PAGE]
 [![](https://dev-badge.eleonora.workers.dev/npm/dm/dev-badge-icon?icon=npm&style=flat&scale=1)][NPM PAGE]
 [![](https://dev-badge.eleonora.workers.dev/npm/dy/dev-badge-icon?icon=npm&style=flat&scale=1)][NPM PAGE]
-
 ###### [![BUNDLEPHOBIA dev-badge-icon ][BUNDLEPHOBIA BADGE]][BUNDLEPHOBIA PAGE]
 - [![](https://dev-badge.eleonora.workers.dev/bundlephobia/min/dev-badge-icon?icon=bundlephobia&style=flat&scale=1)][BUNDLEPHOBIA PAGE]
 [![](https://dev-badge.eleonora.workers.dev/bundlephobia/minzip/dev-badge-icon?icon=bundlephobia&style=flat&scale=1)][BUNDLEPHOBIA PAGE]
-
 ###### [![PACKAGEPHOBIA dev-badge-icon ][PACKAGEPHOBIA BADGE]][PACKAGEPHOBIA PAGE]
 - [![](https://dev-badge.eleonora.workers.dev/packagephobia/publish/dev-badge-icon?icon=packagephobia&style=flat&scale=1)][PACKAGEPHOBIA PAGE]
 [![](https://dev-badge.eleonora.workers.dev/packagephobia/install/dev-badge-icon?icon=packagephobia&style=flat&scale=1)][PACKAGEPHOBIA PAGE]
-
 ###### [![JSDELIVR dev-badge-icon ][JSDELIVR BADGE]][JSDELIVR PAGE]
 - [![](https://dev-badge.eleonora.workers.dev/jsdelivr/hits/month/npm/dev-badge-icon?icon=jsdelivr&style=flat&scale=1)][JSDELIVR PAGE]
 [![](https://dev-badge.eleonora.workers.dev/jsdelivr/rank/month/npm/dev-badge-icon?icon=jsdelivr&style=flat&scale=1)][JSDELIVR PAGE]
@@ -26,8 +23,8 @@
 ---: | :--- | :---: | :---:
 Npm | [![npm Version][NPM VERSION BADGE]][NPM PAGE] | [&#128279;][jsdelivr NPM] | [&#128279;][unpkg NPM]
 Npm | [![npm Download][NPM DOWNLOAD BADGE]][NPM PAGE] | [&#128279;][jsdelivr NPM] | [&#128279;][unpkg NPM]
-Npm | [![npm License][LICENSE BADGE]](LICENSE) | [&#128279;][jsdelivr NPM] | [&#128279;][unpkg NPM]
-Icon| [![example Badge][V2 BADGE]](icons) | [&#128279;][jsdelivr V2] | [&#128279;][unpkg V2]
+Npm | [![npm License][LICENSE BADGE]](/LICENSE) | [&#128279;][jsdelivr NPM] | [&#128279;][unpkg NPM]
+Icon| [![example Badge][V2 BADGE]](/icons) | [&#128279;][jsdelivr V2] | [&#128279;][unpkg V2]
 &nbsp;
 ---
 - ##### Based on *[badgen-icons](https://www.npmjs.com/package/badgen-icons)*.
