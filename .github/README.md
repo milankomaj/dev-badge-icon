@@ -3,15 +3,15 @@
 ![](https://dev-badge.eleonora.workers.dev/npm/dm/dev-badge-icon?icon=npm&style=flat&scale=1)
 ![](https://dev-badge.eleonora.workers.dev/npm/dy/dev-badge-icon?icon=npm&style=flat&scale=1)
 
-###### ![](https://dev-badge.eleonora.workers.dev/npm/v/dev-badge-icon?icon=bundlephobia&label=bundlephobia%20dev-badge-icon&scale=1.2&color=cyan&labelColor=red)  
+###### ![https://bundlephobia.com/result?p=dev-badge-icon](https://dev-badge.eleonora.workers.dev/npm/v/dev-badge-icon?icon=bundlephobia&label=bundlephobia%20dev-badge-icon&scale=1.2&color=cyan&labelColor=red)  
 - ![](https://dev-badge.eleonora.workers.dev/bundlephobia/min/dev-badge-icon?icon=bundlephobia&style=flat&scale=1)
 ![](https://dev-badge.eleonora.workers.dev/bundlephobia/minzip/dev-badge-icon?icon=bundlephobia&style=flat&scale=1)
 
-###### ![](https://dev-badge.eleonora.workers.dev/npm/v/dev-badge-icon?icon=packagephobia&label=packagephobia%20dev-badge-icon&scale=1.2&color=cyan&labelColor=red) 
+###### ![https://packagephobia.com/result?p=dev-badge-icon](https://dev-badge.eleonora.workers.dev/npm/v/dev-badge-icon?icon=packagephobia&label=packagephobia%20dev-badge-icon&scale=1.2&color=cyan&labelColor=red) 
 - ![](https://dev-badge.eleonora.workers.dev/packagephobia/publish/dev-badge-icon?icon=packagephobia&style=flat&scale=1)
 ![](https://dev-badge.eleonora.workers.dev/packagephobia/install/dev-badge-icon?icon=packagephobia&style=flat&scale=1)
 
-###### ![](https://dev-badge.eleonora.workers.dev/npm/v/dev-badge-icon?icon=jsdelivr&label=jsdelivr%20dev-badge-icon&scale=1.2&color=cyan&labelColor=red) 
+###### ![https://www.jsdelivr.com/package/npm/dev-badge-icon](https://dev-badge.eleonora.workers.dev/npm/v/dev-badge-icon?icon=jsdelivr&label=jsdelivr%20dev-badge-icon&scale=1.2&color=cyan&labelColor=red) 
 - ![](https://dev-badge.eleonora.workers.dev/jsdelivr/hits/month/npm/dev-badge-icon?icon=jsdelivr&style=flat&scale=1)
 ![](https://dev-badge.eleonora.workers.dev/jsdelivr/rank/month/npm/dev-badge-icon?icon=jsdelivr&style=flat&scale=1)
 
@@ -42,7 +42,7 @@ Icon| [![example Badge][V2 BADGE]][V2 PAGE] | [&#128279;][jsdelivr V2] | [&#1282
 
 [NPM VERSION BADGE]: https://dev-badge.eleonora.workers.dev/npm/v/dev-badge-icon?icon=npm&style=flat&scale=2
 [NPM DOWNLOAD BADGE]: https://dev-badge.eleonora.workers.dev/npm/dt/dev-badge-icon?icon=npm&style=flat&scale=2
-[NPM PAGE]: /
+[NPM PAGE]: https://www.npmjs.com/package/dev-badge-icon
 [jsdelivr NPM]: https://cdn.jsdelivr.net/npm/dev-badge-icon/icons/npm.svg
 [unpkg NPM]: https://unpkg.com/dev-badge-icon/icons/npm.svg
 
