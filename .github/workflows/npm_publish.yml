@@ -10,11 +10,12 @@ jobs:
       - uses: actions/checkout@v2
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v2
-        working-directory: ./dev-badge-icon
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
+        working-directory: ./dev-badge-icon
       - run: npm publish --dry-run
+        working-directory: ./dev-badge-icon
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
