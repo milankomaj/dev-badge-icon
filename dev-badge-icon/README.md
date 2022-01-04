@@ -9,7 +9,7 @@
 
 
 
-### &#128279;[Icons *preview*](https://unpkg.com/dev-badge-icon/icons.html)  (Light)
+### &#128279;[Icons *preview*](https://unpkg.com/dev-badge-icon/icons.html)
 ### Example: &#11015;&#65039; &#11015;&#65039; &#11015;&#65039;
 
 **Icon** | `Badge`  | **jsdelivr.net** | **unpkg.com**

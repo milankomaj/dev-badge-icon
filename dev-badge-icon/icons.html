@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <meta name="color-scheme" content="dark light" />
+  <meta name="supported-color-schemes" content="dark light">
+  <title>dev-badge-icon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1><img src="https://dev-badge.eleonora.workers.dev/npm/v/dev-badge-icon?icon=&label=dev-badge-icon&color=gray&labelColor=red&style=flat&scale=2"></h1>
+  <ul></ul>
+<style>
+
+h1 {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+}
+ul {
+  list-style-type: none;	
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+li {
+  margin-bottom: 10px;
+  background-color: pink;
+  font-size: 150%;
+  border-top: 4px solid pink;
+  border-bottom: 3px solid pink;
+ 
+}
+
+strong {
+  background-color: purple;
+  color: white;
+  padding: 0 8px;
+  border-top: 2px solid purple;
+  border-bottom: 2px solid purple;
+  text-shadow: 2px 2px 1px black;
+}
+  @media (prefers-color-scheme: light) {body {background-color: rgba(255, 255, 255, 0.849);}li {  box-shadow: 5px 5px 5px rgba(0,0,0,0.7);}}
+  @media (prefers-color-scheme: dark) {body {background-color:#2b2c33;color: green;}li {  box-shadow: 5px 5px 5px rgba(243, 243, 243, 0.34);
+}}
+</style>
+</body>
+<script>
+  var List = document.querySelector('ul');
+
+  fetch('https://raw.githubusercontent.com/milankomaj/dev-badge-icon/dev-badge-icon/main/icons.json')
+    .then(function (response) {
+      if (!response.ok) {
+        throw new Error("HTTP error, status = " + response.status);
+      }
+      return response.json();
+    })
+    .then(function (json) {
+      for (var i = 0; i < Object.keys(json).length; i++) {
+
+        var listItem = document.createElement('li');
+        var Item = Object.keys(json)[i];
+        var Base = Object.values(json)[i].base64;
+
+        listItem.innerHTML += '&nbsp;' + Object.keys(json)[i].toUpperCase() + ': ';
+        //listItem.innerHTML +=Object.entries(json)[i] + '**';
+        //listItem.innerHTML +=Object.values(json)[i].height + '';
+        //listItem.innerHTML +='<strong>' + `<img  height="20" width="" src="https://dev-badge.eleonora.workers.dev/badge/${Item}/${Item}?icon=${Item}&style=flat">` ;
+        listItem.innerHTML +=
+          `<svg width="164.04" height="24" viewBox="0 0 1367 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="${Item}">
+            <title>${Item}</title>
+            <g>
+              <rect fill="#E43" width="1157" height="200"/>
+              <rect fill="#999" x="1157" width="210" height="200"/>
+            </g>
+            <g aria-hidden="true" fill="#fff" text-anchor="start" font-size="130">
+              <text x="220" y="148" textLength="897" fill="#000" opacity="0.1">${Item}</text>
+              <text x="210" y="138" textLength="897">&nbsp;${Item}&nbsp;</text>
+              <text x="1212" y="148" textLength="110" fill="#000" opacity="0.1">✔</text>
+              <text x="1202" y="138" textLength="110">✔</text>
+            </g>
+            <image x="40" y="35" width="200" height="132" xlink:href="${Base}"/>
+          </svg>` + '&nbsp;';
+        listItem.innerHTML += '<strong>' + '<img alt="" height="20" width="" src="' + Base + '">' + '</strong>' + '&nbsp;';
+
+        List.appendChild(listItem);
+      }
+      //console.log(Object.keys(json));
+      //console.log(Object.entries(json));
+      //console.log(Object.getOwnPropertyNames(json));
+      //console.log(Object.values(json));
+      //let map = new Map(Object.entries(json));
+      //console.log(map);
+      for (const [key, value] of Object.entries(json)) { console.log(`${key} ${value.height}/${value.width} px`); };
+    })
+
+    .catch(function (error) {
+      var p = document.createElement('p');
+      p.appendChild(
+        document.createTextNode('Error: ' + error.message)
+      );
+      document.body.insertBefore(p, List);
+    });
+
+</script>
+
+</html>

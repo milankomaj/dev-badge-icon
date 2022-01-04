@@ -1,0 +1,24 @@
+{
+  "name": "dev-badge-icon",
+  "version": "1.0.9",
+  "description": "dev badge icons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "badge",
+    "icons",
+    "svg",
+    "base64"
+  ],
+  "author": "eleonora",
+  "license": "ISC",
+  "homepage": "https://github.com/milankomaj/dev-badge-icon/dev-badge-icon",
+  "bugs": {"url": "https://github.com/milankomaj/dev-badge-icon/issues"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/milankomaj/dev-badge-icon.git",
+    "directory": "dev-badge-icon/dev-badge-icon"
+  }
+}
