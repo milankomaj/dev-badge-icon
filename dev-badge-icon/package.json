@@ -16,5 +16,9 @@
   "license": "ISC",
   "homepage": "https://github.com/milankomaj/dev-badge-icon/dev-badge-icon",
   "bugs": {"url": "https://github.com/milankomaj/dev-badge-icon/issues"},
-  "repository":"git://github.com/milankomaj/dev-badge-icon.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/milankomaj/dev-badge-icon.git",
+    "directory": "dev-badge-icon"
+  }
 }
