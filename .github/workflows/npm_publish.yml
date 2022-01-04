@@ -16,7 +16,8 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-      - run: npm install --save        
+      - run: npm install --save  
+      - run: npm version patch --dry-run       
       - run: npm ci
       - run: npm publish --dry-run
         env:
