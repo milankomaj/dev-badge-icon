@@ -7,22 +7,7 @@
 [![](https://dev-badge.eleonora.workers.dev/npm/dy/dev-badge-icon?icon=npm&style=flat&scale=1.2)][NPM PAGE] | [![](https://dev-badge.eleonora.workers.dev/bundlephobia/minzip/dev-badge-icon?icon=bundlephobia&style=flat&scale=1.2)][BUNDLEPHOBIA PAGE] | [![](https://dev-badge.eleonora.workers.dev/packagephobia/install/dev-badge-icon?icon=packagephobia&style=flat&scale=1.2)][PACKAGEPHOBIA PAGE] | [![](https://dev-badge.eleonora.workers.dev/jsdelivr/rank/month/npm/dev-badge-icon?icon=jsdelivr&style=flat&scale=1.2)][JSDELIVR PAGE] | 
 
 
- 
 
----
-# dev-badge-icon 
-
-
-### &#128279;[Icons *preview*](https://unpkg.com/dev-badge-icon/icons.html)  (Light)
-### Example: &#11015;&#65039; &#11015;&#65039; &#11015;&#65039;
-
-**Icon** | `Badge`  | **packagephobia** | **unpkg.com**
----: | :--- | :---: | :---:
-Npm | [![npm Version][NPM VERSION BADGE]][NPM PAGE] | [&#128279;][jsdelivr NPM] | [&#128279;][unpkg NPM]
-Npm | [![npm Download][NPM DOWNLOAD BADGE]][NPM PAGE] | [&#128279;][jsdelivr NPM] | [&#128279;][unpkg NPM]
-Npm | [![npm License][LICENSE BADGE]](/LICENSE) | [&#128279;][jsdelivr NPM] | [&#128279;][unpkg NPM]
-Icon| [![example Badge][V2 BADGE]](/icons) | [&#128279;][jsdelivr V2] | [&#128279;][unpkg V2]
-&nbsp;
 ---
 - ##### Based on *[badgen-icons](https://www.npmjs.com/package/badgen-icons)*.
 
