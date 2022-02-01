@@ -16,6 +16,14 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
+
+      - name: env
+        run: env | sort
+      - name: GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"   
+
       - run: npm install --save  
       - run: npm version patch --dry-run       
       - run: npm ci
