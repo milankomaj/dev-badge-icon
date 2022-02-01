@@ -22,6 +22,6 @@ jobs:
       - name: tree
         run: |
          echo ***/icons/***
-         tree -h /icons/
+         tree -h ./icons/
          echo ***/output/***
-         tree -h /output/        
+         tree -h ./output/        
