@@ -1,5 +1,5 @@
 {
-  "name": "generate-icons\",
+  "name": "generate-icons",
   "version": "0.20.0",
   "description": "Badgen's icons",
   "homepage": "https://github.com/badgen/badgen-icons#readme",
@@ -24,8 +24,8 @@
     "Test": "npm run fileTest",
     "file": "svgo --config=svgo.config.js  -i ./base64/*.svg -o ./base64/*.svg",
     "base64": "svgo --config=svgo.config.js --datauri=base64 -i ./base64/*.svg -o ./base64/.txt",
-    "SV": "svgo --multipass --config=svgo.config.js -f ./icons -o ./icons",
-    "Folder": "svgo --multipass --config=svgo.config.js -f ./folder -o ./output"
+    "SV": "svgo --multipass --config=svgo.config.js -f /icons -o /output",
+    "Folder": "svgo --multipass --config=svgo.config.js -f /icons -o /output"
   },
   "dependencies": {
     "svgo": "^2.8.0"
