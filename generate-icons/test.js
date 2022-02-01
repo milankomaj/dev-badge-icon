@@ -3,7 +3,7 @@
 const FS = require('fs');
 const PATH = require('path');
 const { optimize } = require('svgo');
-const filepath = PATH.resolve(__dirname, 'base64/uptimerobot.svg');
+const filepath = PATH.resolve(__dirname, 'icons/lastfm.svg');
 const config = {
   plugins: [
     'cleanupAttrs',
