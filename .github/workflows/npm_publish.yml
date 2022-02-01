@@ -17,13 +17,14 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
           ref: ${{ github.event.release.target_commitish }}
-          
+
+
       - run: npm install --save  
       - run: npm version patch --dry-run       
       - run: npm ci
       - run: npm publish --dry-run
       - run: npm version ${{ github.event.release.tag_name }}
-      - run: npm publish --dry-run --tag ${{ github.event.release.target_commitish }}
+      - run: npm install dev-badge-icon@next --dry-run
       - run: echo "$GITHUB_CONTEXT"
 
         env:
