@@ -22,12 +22,8 @@ jobs:
       - run: npm ci
       - run: npm publish --dry-run
       - run: npm version ${{ github.event.release.tag_name }}
+      - run: npm publish --dry-run --tag ${{ github.event.release.target_commitish }}
       - run: echo "$GITHUB_CONTEXT"
-
-      - name: version
-        run: |
-         npm version ${{ github.event.release.tag_name }} | jq
-
 
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
