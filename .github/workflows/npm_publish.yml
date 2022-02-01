@@ -24,7 +24,6 @@ jobs:
       - run: npm ci
       - run: npm publish --dry-run
       - run: npm version ${{ github.event.release.tag_name }}
-      - run: npm publish --tag next --dry-run
       - run: echo "$GITHUB_CONTEXT"
 
         env:
