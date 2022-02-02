@@ -38,7 +38,6 @@ jobs:
          echo "branch"
          git config --global user.email ${{ secrets.EMAIL }}
          git config --global user.name ${{ secrets.NAME }}  
-         git branch
          git checkout -b relase
 
 
