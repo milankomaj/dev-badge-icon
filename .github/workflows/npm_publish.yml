@@ -4,6 +4,8 @@ on:
   workflow_run:
    workflows: ["Generate icons"]
    types: [completed]
+    branches:
+     - new_relase
 jobs:
   build:
     runs-on: ubuntu-latest
