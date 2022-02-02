@@ -1,9 +1,7 @@
 name: Generate icons
 on:
   workflow_dispatch:
-  push:
-   branches:
-    - 'releases'
+
 
 jobs:
   build:
@@ -36,7 +34,8 @@ jobs:
          tree -h ${{ github.workspace }}/generate-icons -I node_modules
          echo "branch"
          git config --global user.email ${{ secrets.EMAIL }}
-         git config --global user.name ${{ secrets.NAME }}       
+         git config --global user.name ${{ secrets.NAME }}  
+         git branch releases main    
          git push --all
         
      
