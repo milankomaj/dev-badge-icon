@@ -39,5 +39,5 @@ jobs:
          git config --global user.name ${{ secrets.NAME }}       
          git status
          git checkout -b [relase]
+         git push -u origin [relase]      
          git status
-         git push --all
