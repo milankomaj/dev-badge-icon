@@ -9,7 +9,7 @@
 
 
 ---
-- ##### Icons preview *[dev-badge-icons](https://milankomaj.github.io/dev-badge-icon/dev-badge-icon/)*.
+- ##### Icons preview *[dev-badge-icons](https://milankomaj.github.io/dev-badge-icon/dev-badge-icon/icons.html)*.
 - ##### Based on *[badgen-icons](https://www.npmjs.com/package/badgen-icons)*.
 
 
