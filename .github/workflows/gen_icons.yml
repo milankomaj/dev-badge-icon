@@ -20,7 +20,7 @@ jobs:
       - run:  npm run SV
       - run:  npm run Test
 
-      - name: tree
+      - name: tree 
         run: |
          echo ***/icons/***
          tree -h ./icons/
