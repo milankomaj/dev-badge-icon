@@ -33,3 +33,4 @@ jobs:
          npm run build
          tree -h ${{ github.workspace }}/generate-icons -I node_modules
          git branch relase
+         git push --all
