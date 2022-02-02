@@ -25,4 +25,10 @@ jobs:
          echo ***/icons/***
          tree -h ./icons/
          echo ***/output/***
-         tree -h ./output/        
+         tree -h ./output/
+
+      - name: json build
+        run: |
+         cp ${{ github.workspace }}/dev-badge-icon/*.svg ${{ github.workspace }}/generate-icons/icons
+         npm run build
+         tree -h ${{ github.workspace }}/generate-icons -I node_modules
