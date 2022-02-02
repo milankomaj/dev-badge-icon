@@ -1,8 +1,10 @@
 name: Generate icons
 on:
   workflow_dispatch:
-  branches:
+  push:
+   branches:
     - 'releases'
+    
 jobs:
   build:
     runs-on: ubuntu-latest
