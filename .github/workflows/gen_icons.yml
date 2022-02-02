@@ -33,16 +33,7 @@ jobs:
          npm run build
          tree -h ${{ github.workspace }}/generate-icons -I node_modules
          
-      - name: branch
-        run: |         
-         echo "branch"
-         git config --global user.email ${{ secrets.EMAIL }}
-         git config --global user.name ${{ secrets.NAME }}  
-         git checkout -b relase main
-         git status
-         git add .
-         git commit -m "relase"
-         git push
+
 
 
 
