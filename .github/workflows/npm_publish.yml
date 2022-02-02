@@ -1,8 +1,9 @@
 name: Publish Package to npmjs
 on:
   workflow_dispatch:
-  release:
-    types: [created]
+  workflow_run:
+   workflows: ["Generate icons"]
+   types: [completed]
 jobs:
   build:
     runs-on: ubuntu-latest
