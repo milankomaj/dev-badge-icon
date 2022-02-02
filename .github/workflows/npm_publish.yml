@@ -17,8 +17,6 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-          ref: ${{ github.event.release.target_commitish }}
-
 
       - run: npm install --save  
       - run: npm version patch --dry-run       
