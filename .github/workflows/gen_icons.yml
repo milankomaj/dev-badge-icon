@@ -34,6 +34,13 @@ jobs:
          cp ${{ github.workspace }}/dev-badge-icon/icons/*.svg ${{ github.workspace }}/generate-icons/icons
          npm run build
          tree -h ${{ github.workspace }}/generate-icons -I node_modules
+
+      - name: branch 
+        run: |
+         git config --global user.email ${{ secrets.EMAIL }}
+         git config --global user.name ${{ secrets.NAME }}       
          git status
-  
+         git branch releases
+         git checkout releases
+         git status
 
