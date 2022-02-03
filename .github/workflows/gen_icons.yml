@@ -20,7 +20,7 @@ jobs:
         run: |          
          svg=$(find -name '*.svg' -type f -printf "%f\n")
          echo svg=$svg
-         sed -i 's/*.svg/$svg/' ${{ github.workspace }}/generate-icons/test.js
+         sed -i 's/REPLACE/$svg/' ${{ github.workspace }}/generate-icons/test.js
 
 
       - run: npm install --save       
