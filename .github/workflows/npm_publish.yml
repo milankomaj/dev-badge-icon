@@ -21,6 +21,12 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
 
+      - name: VERSION
+        shell: bash
+        run: |
+         VERSION=$(npm version patch --dry-run)   
+         echo VERSION=$VERSION        
+
       - run: npm install --save  
       - run: npm version patch -m "[RELEASE] %s" --dry-run       
       - run: npm ci
@@ -32,8 +38,4 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_CONTEXT: ${{ toJson(github) }}
 
-      - name: VERSION
-        shell: bash
-        run: |
-         VERSION=$(npm version patch -m "[RELEASE] %s" --dry-run)   
-         echo VERSION=$VERSION
+
