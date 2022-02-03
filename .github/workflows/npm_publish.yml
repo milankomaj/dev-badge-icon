@@ -32,8 +32,8 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_CONTEXT: ${{ toJson(github) }}
 
-     - name: VERSION
-       shell: bash
+      - name: VERSION
+        shell: bash
         run: |
          VERSION=$(npm version patch -m "[RELEASE] %s" --dry-run)   
          echo VERSION=$VERSION
