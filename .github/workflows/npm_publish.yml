@@ -4,8 +4,6 @@ on:
   workflow_run:
    workflows: ["Generate icons"]
    types: [completed]
-   tags:
-    - 'v*.*.*'
 
 jobs:
   build:
