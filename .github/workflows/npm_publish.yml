@@ -20,15 +20,14 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
+      
 
+      - run: npm install --save 
       - name: VERSION
-        shell: bash
-        run: |
-         VERSION=$(npm version patch --dry-run)   
-         echo VERSION=$VERSION        
-
-      - run: npm install --save  
-      - run: npm version patch -m "[RELEASE] %s" --dry-run       
+         shell: bash      
+         run: |
+          VERSION=$(npm version patch --dry-run)   
+          echo VERSION=$VERSION       
       - run: npm ci
       - run: npm publish --dry-run
       - run: npm version ${{ github.event.release.tag_name }}
