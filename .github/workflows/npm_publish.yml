@@ -47,5 +47,6 @@ jobs:
           git config --global user.name ${{ secrets.NAME }}
           rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
           git status
+          git tag ${{needs.build.outputs.output1}
           git commit -m "${{needs.build.outputs.output1}&${{needs.build.outputs.output2}"
           git push
