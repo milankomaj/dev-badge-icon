@@ -40,6 +40,7 @@ jobs:
       - run: npm version ${{ github.event.release.tag_name }}
       - run: echo "$GITHUB_CONTEXT"
       - run: npm run version
+      - run: npm run version minor
 
       - name: Update
         shell: bash
