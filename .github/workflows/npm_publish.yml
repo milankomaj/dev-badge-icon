@@ -20,7 +20,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org/dev-badge-icon'
+          registry-url: 'https://registry.npmjs.org'
       
 
       - run: npm install --save
@@ -33,9 +33,8 @@ jobs:
           echo "::set-output name=VERSION::$(echo $VERSION)"   
           SVG=$(find ${{ github.workspace }}/generate-icons/ -name '*.svg' -type f -printf "%f\n")
           echo "::set-output name=SVG::$(echo $SVG)" 
-      - run: npm publish
-
       - run: npm ci
+      - run: npm publish
       - run: npm version ${{ github.event.release.tag_name }}
       - run: echo "$GITHUB_CONTEXT"
       - run: npm run version
