@@ -30,6 +30,9 @@ jobs:
       - run: npm version ${{ github.event.release.tag_name }}
       - run: echo "$GITHUB_CONTEXT"
       - run: npm run version
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
 
       - name: Set output
         id: vars
@@ -41,9 +44,3 @@ jobs:
           echo $RELEASE_VERSION
           echo ${{ steps.vars.outputs.tag }}
           echo ${{ needs.test.outputs.output1 }} 
-
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-
-
