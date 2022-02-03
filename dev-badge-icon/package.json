@@ -16,7 +16,7 @@
   "author": "eleonora",
   "license": "ISC",
   "publishConfig": {"access": "public"},
-  "homepage": "https://github.com/milankomaj/dev-badge-icon/dev-badge-icon",
+  "homepage": "https://github.com/milankomaj/dev-badge-icon",
   "bugs": {"url": "https://github.com/milankomaj/dev-badge-icon/issues"},
   "repository": {
     "type": "git",
