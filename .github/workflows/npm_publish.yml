@@ -24,8 +24,8 @@ jobs:
 
       - run: npm install --save 
       - name: VERSION
-         shell: bash      
-         run: |
+        shell: bash      
+        run: |
           VERSION=$(npm version patch --dry-run)   
           echo VERSION=$VERSION       
       - run: npm ci
