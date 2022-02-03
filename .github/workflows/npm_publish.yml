@@ -23,7 +23,8 @@ jobs:
           registry-url: 'https://registry.npmjs.org/dev-badge-icon'
       
 
-      - run: npm install --save 
+      - run: npm install --save
+      - run: npm whoami
       - name: VERSION
         id: step1
         shell: bash      
