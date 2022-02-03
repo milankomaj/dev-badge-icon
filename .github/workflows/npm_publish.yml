@@ -16,7 +16,9 @@ jobs:
         working-directory: ./dev-badge-icon
     env:
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      GITHUB_CONTEXT: ${{ toJson(github) }}    
+      GITHUB_CONTEXT: ${{ toJson(github) }} 
+      GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
     steps:
       - uses: actions/checkout@v2
       # Setup .npmrc file to publish to npm
@@ -50,6 +52,7 @@ jobs:
           rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
           git status
           git tag ${{needs.build.outputs.output1}}
+          gh auth login --with-token ${{ secrets.TOKEN }}
           gh issue create --title "${{needs.build.outputs.output2}}" --label "documentation" --body "${{needs.build.outputs.output1}}&${{needs.build.outputs.output2}}"
           git commit -m "${{needs.build.outputs.output1}}&${{needs.build.outputs.output2}}"
           git push
