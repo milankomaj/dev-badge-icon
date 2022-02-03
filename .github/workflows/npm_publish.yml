@@ -33,6 +33,7 @@ jobs:
           GITHUB_CONTEXT: ${{ toJson(github) }}
 
      - name: VERSION
+       shell: bash
         run: |
          VERSION=$(npm version patch -m "[RELEASE] %s" --dry-run)   
          echo VERSION=$VERSION
