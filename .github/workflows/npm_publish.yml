@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       output1: ${{ steps.step1.outputs.VERSION }}
+      output2: ${{ steps.step1.outputs.SVG }}
     defaults:
       run:
         working-directory: ./dev-badge-icon
@@ -29,7 +30,11 @@ jobs:
         run: |
           VERSION=$(npm version patch --dry-run)   
           echo VERSION=$VERSION
-          echo "::set-output name=VERSION::$(echo $VERSION)"    
+          echo "::set-output name=VERSION::$(echo $VERSION)"   
+          SVG=$(find ${{ github.workspace }}/generate-icons/ -name '*.svg' -type f -printf "%f\n")
+          echo "::set-output name=SVG::$(echo $SVG)" 
+
+
       - run: npm ci
       - run: npm publish --dry-run
       - run: npm version ${{ github.event.release.tag_name }}
