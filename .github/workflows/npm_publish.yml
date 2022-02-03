@@ -20,7 +20,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://registry.npmjs.org/dev-badge-icon'
       
 
       - run: npm install --save 
@@ -42,12 +42,3 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_CONTEXT: ${{ toJson(github) }}
-
-      - name: Update
-        run: |
-          git config --global user.email ${{ secrets.EMAIL }}
-          git config --global user.name ${{ secrets.NAME }}
-          git status    
-          git add ${{ github.workspace }}/dev-badge-icon/
-          git commit -m "${{needs.build.outputs.output1}}"
-          git push
