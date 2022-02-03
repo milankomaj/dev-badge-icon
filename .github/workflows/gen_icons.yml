@@ -2,7 +2,6 @@ name: Generate icons
 on:
   workflow_dispatch:
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,7 +32,17 @@ jobs:
          npm run build
          tree -h ${{ github.workspace }}/generate-icons -I node_modules
 
-
+      - name: Update
+        run: |
+          git config --global user.email ${{ secrets.EMAIL }}
+          git config --global user.name ${{ secrets.NAME }}
+          mv ${{ github.workspace }}/generate-icons/output/*.svg ${{ github.workspace }}/dev-badge-icon/icons
+          mv ${{ github.workspace }}/generate-icons/icons.json ${{ github.workspace }}/dev-badge-icon
+          git status
+          git add ${{ github.workspace }}/dev-badge-icon/icons/*.svg     
+          git add ${{ github.workspace }}/dev-badge-icon/icons.json
+          git commit -m "${{needs.build.outputs.output4}}"
+          git push
 
 
         

@@ -9,9 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    outputs: 
-     output1: ${{ steps.vars.outputs.tag }}   
+    runs-on: ubuntu-latest 
     defaults:
       run:
         working-directory: ./dev-badge-icon
@@ -34,9 +32,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_CONTEXT: ${{ toJson(github) }}
 
-      - name: event JSON
-        env:
-          EVENT_JSON_FILENAME: ${{ github.event_path }}
+     - name: VERSION
         run: |
-         cat "$EVENT_JSON_FILENAME"
-         echo $EVENT_JSON_FILENAME
+         VERSION=$(npm version patch -m "[RELEASE] %s" --dry-run)   
+         echo VERSION=$VERSION
