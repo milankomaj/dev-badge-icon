@@ -42,12 +42,13 @@ jobs:
       - run: npm run version
 
       - name: Update
+        shell: bash
         run: |
           git config --global user.email ${{ secrets.EMAIL }}
           git config --global user.name ${{ secrets.NAME }}
           rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
           git status
-          git tag ${{needs.build.outputs.output1}
-          gh issue create --title "${{needs.build.outputs.output2}" --label "documentation" --body "${{needs.build.outputs.output1}&${{needs.build.outputs.output2}"
-          git commit -m "${{needs.build.outputs.output1}&${{needs.build.outputs.output2}"
+          git tag ${{needs.build.outputs.output1}}
+          gh issue create --title "${{needs.build.outputs.output2}}" --label "documentation" --body "${{needs.build.outputs.output1}}&${{needs.build.outputs.output2}}"
+          git commit -m "${{needs.build.outputs.output1}}&${{needs.build.outputs.output2}}"
           git push
