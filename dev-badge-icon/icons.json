@@ -334,6 +334,11 @@
     "width": 13,
     "height": 13
   },
+  "uptimerobot": {
+    "base64": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZyBmaWxsPSJub25lIj48Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjI1NiIgZmlsbD0iI2VlZWUiLz48Y2lyY2xlIGN4PSIyNTYuNSIgY3k9IjI1Ni41IiByPSIxNDEuNSIgc3Ryb2tlPSIjMkE4QzAwIiBzdHJva2Utd2lkdGg9IjQwIi8+PC9nPjwvc3ZnPg==",
+    "width": 10,
+    "height": 13
+  },
   "vercel": {
     "base64": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTMgMTAwIj48cGF0aCBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01Ni41IDAgMTEzIDEwMEgweiIvPjwvc3ZnPg==",
     "width": 13,
