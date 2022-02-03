@@ -41,3 +41,11 @@ jobs:
       - run: echo "$GITHUB_CONTEXT"
       - run: npm run version
 
+      - name: Update
+        run: |
+          git config --global user.email ${{ secrets.EMAIL }}
+          git config --global user.name ${{ secrets.NAME }}
+          rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
+          git status
+          git commit -m "${{needs.build.outputs.output1}&${{needs.build.outputs.output2}"
+          git push
