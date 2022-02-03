@@ -4,6 +4,8 @@ on:
   workflow_run:
    workflows: ["Generate icons"]
    types: [completed]
+   tags:
+    - 'v*.*.*'
 
 jobs:
   build:
@@ -30,3 +32,23 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_CONTEXT: ${{ toJson(github) }}
+
+  test:
+    runs-on: ubuntu-latest
+    outputs: 
+     output1: ${{ steps.vars.outputs.tag }}
+    defaults:
+      run:
+        working-directory: ./dev-badge-icon
+   steps:
+    - uses: actions/checkout@v2
+    - name: Set output
+      id: vars
+      run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+    - name: Check output
+      env:
+        RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
+      run: |
+        echo $RELEASE_VERSION
+        echo ${{ steps.vars.outputs.tag }}
+        echo ${{ needs.test.outputs.output1 }}   
