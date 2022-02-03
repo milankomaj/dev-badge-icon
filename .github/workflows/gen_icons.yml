@@ -41,7 +41,7 @@ jobs:
           git status
           git add ${{ github.workspace }}/dev-badge-icon/icons/*.svg     
           git add ${{ github.workspace }}/dev-badge-icon/icons.json
-          git commit -m "${{needs.build.outputs.output4}}"
+          git commit -m "new icon relase"
           git push
 
 
