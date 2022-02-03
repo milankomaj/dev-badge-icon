@@ -23,11 +23,12 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       
 
-      - run: npm install --save
+      - run: npm install
       - name: VERSION
         id: step1
         shell: bash      
         run: |
+          cd ${{ github.workspace }}/dev-badge-icon
           VERSION=$(npm version patch)   
           echo VERSION=$VERSION
           echo "::set-output name=VERSION::$(echo $VERSION)"   
