@@ -51,6 +51,7 @@ jobs:
           git config --global user.name ${{ secrets.NAME }}
           rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
           git status
+          git add .
           git tag ${{needs.build.outputs.output1}}
           gh auth login --with-token ${{ secrets.TOKEN }}
           gh issue create --title "${{needs.build.outputs.output2}}" --label "documentation" --body "${{needs.build.outputs.output1}}&${{needs.build.outputs.output2}}"
