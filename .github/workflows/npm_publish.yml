@@ -28,7 +28,7 @@ jobs:
         id: step1
         shell: bash      
         run: |
-          VERSION=$(npm version patch --dry-run)   
+          VERSION=$(npm version patch)   
           echo VERSION=$VERSION
           echo "::set-output name=VERSION::$(echo $VERSION)"   
           SVG=$(find ${{ github.workspace }}/generate-icons/ -name '*.svg' -type f -printf "%f\n")
@@ -36,8 +36,6 @@ jobs:
 
 
       - run: npm ci
-      - run: npm version patch
-      - run: npm publish
       - run: npm version ${{ github.event.release.tag_name }}
       - run: echo "$GITHUB_CONTEXT"
       - run: npm run version
