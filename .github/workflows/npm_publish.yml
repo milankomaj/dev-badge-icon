@@ -10,6 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs: 
+     output1: ${{ steps.vars.outputs.tag }}   
     defaults:
       run:
         working-directory: ./dev-badge-icon
@@ -29,19 +31,6 @@ jobs:
       - run: echo "$GITHUB_CONTEXT"
       - run: npm run version
 
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-
-  test:
-    runs-on: ubuntu-latest
-    outputs: 
-     output1: ${{ steps.vars.outputs.tag }}
-    defaults:
-      run:
-        working-directory: ./dev-badge-icon
-    steps:
-      - uses: actions/checkout@v2
       - name: Set output
         id: vars
         run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
@@ -51,4 +40,10 @@ jobs:
         run: |
           echo $RELEASE_VERSION
           echo ${{ steps.vars.outputs.tag }}
-          echo ${{ needs.test.outputs.output1 }}   
+          echo ${{ needs.test.outputs.output1 }} 
+
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+
+
