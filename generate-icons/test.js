@@ -40,7 +40,8 @@ const config = {
     'convertShapeToPath',
     'sortAttrs',
     'removeDimensions',
-    { name: 'removeAttrs', params: { attrs: '(stroke|stroke-width|version|x|y|enable-background|space)' } },
+    // { name: 'removeAttrs', params: { attrs: '(stroke|stroke-width|version|x|y|enable-background|space)' } },   
+    { name: 'removeAttrs', params: { attrs: '(version|x|y|enable-background|space)' } },
   ],
 };
 
