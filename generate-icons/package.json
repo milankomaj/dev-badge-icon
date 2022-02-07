@@ -2,16 +2,16 @@
   "name": "generate-icons",
   "version": "0.20.0",
   "description": "Badgen's icons",
-  "homepage": "https://github.com/badgen/badgen-icons#readme",
+  "homepage": "https://github.com/milankomaj/dev-badge-icon/tree/main/generate-icons",
   "bugs": {
-    "url": "https://github.com/badgen/badgen-icons/issues"
+    "url": "https://github.com/milankomaj/dev-badge-icon/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/badgen/badgen-icons.git"
+    "url": "git+https://github.com/milankomaj/dev-badge-icon.git"
   },
   "license": "ISC",
-  "author": "Amio <amio.cn@gmail.com>",
+  "author": "original source: Amio <amio.cn@gmail.com>, https://github.com/badgen/badgen-icons/",
   "main": "index.js",
   "files": [
     "icons.json",
