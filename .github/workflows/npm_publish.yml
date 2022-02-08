@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-      - run: npm install
+      - run: npm install --save
       - name: VERSION
         id: step1
         shell: bash      
