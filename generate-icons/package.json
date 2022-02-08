@@ -1,7 +1,7 @@
 {
   "name": "generate-icons",
   "version": "0.20.0",
-  "description": "Badgen's icons",
+  "description": "generates badge icons",
   "homepage": "https://github.com/milankomaj/dev-badge-icon/tree/main/generate-icons",
   "bugs": {
     "url": "https://github.com/milankomaj/dev-badge-icon/issues"
