@@ -16,7 +16,7 @@ jobs:
         working-directory: ./dev-badge-icon
     env:
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      GITHUB_CONTEXT: ${{ toJson(github) }} 
+      # GITHUB_CONTEXT: ${{ toJson(github) }} 
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
     steps:
@@ -32,16 +32,16 @@ jobs:
         shell: bash      
         run: |
           cd ${{ github.workspace }}/dev-badge-icon
-          VERSION=$(npm version patch --dry-run)   
+          VERSION=$(npm version patch)   
           echo VERSION=$VERSION
           echo "::set-output name=VERSION::$(echo $VERSION)"   
           SVG=$(find ${{ github.workspace }}/generate-icons/ -name '*.svg' -type f -printf "%f\n")
           echo "::set-output name=SVG::$(echo $SVG)" 
       - run: npm ci
-      - run: npm publish --dry-run
+      - run: npm publish
       - run: npm version ${{ github.event.release.tag_name }}
       - run: echo "$GITHUB_CONTEXT"
-      - run: npm run version --dry-run
+      - run: npm run version
   
 
       - name: Update
