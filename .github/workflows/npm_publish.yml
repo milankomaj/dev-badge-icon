@@ -26,13 +26,13 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-      - run: npm install --dry-run
+      - run: npm install
       - name: VERSION
         id: step1
         shell: bash      
         run: |
           cd ${{ github.workspace }}/dev-badge-icon
-          VERSION=$(npm version patch)   
+          VERSION=$(npm version patch --dry-run)   
           echo VERSION=$VERSION
           echo "::set-output name=VERSION::$(echo $VERSION)"   
           SVG=$(find ${{ github.workspace }}/generate-icons/ -name '*.svg' -type f -printf "%f\n")
