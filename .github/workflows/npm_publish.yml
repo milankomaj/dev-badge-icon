@@ -55,6 +55,4 @@ jobs:
           git tag ${{needs.build.outputs.output1}}
           git commit -m "${{needs.build.outputs.output1}} & ${{needs.build.outputs.output2}}"
           git status
-          gh auth login --with-token ${{ secrets.TOKEN }}
-          gh issue create --title "${{needs.build.outputs.output2}}" --label "documentation" --body "${{needs.build.outputs.output1}} & ${{needs.build.outputs.output2}}"
           git push
