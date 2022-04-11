@@ -51,10 +51,10 @@ jobs:
           git config --global user.name ${{ secrets.NAME }}
 
           git checkout -b dev
-          git checkout commit -m "${{needs.build.outputs.output2}}"
+          git checkout commit -m "files modified"
           git push origin dev
           git checkout master
-
+          
           rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
           git add -A 
           git tag ${{needs.build.outputs.output1}}
