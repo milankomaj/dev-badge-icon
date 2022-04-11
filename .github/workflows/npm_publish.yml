@@ -39,11 +39,11 @@ jobs:
           SVG=$(find ${{ github.workspace }}/generate-icons/ -name '*.svg' -type f -printf "%f\n")
           echo $SVG
           echo "::set-output name=SVG::$(echo $SVG)" 
-      - run: npm ci --dry-run
-      - run: npm publish --dry-run
+      - run: npm ci
+      - run: npm publish
       - run: npm version ${{ github.event.release.tag_name }}
       - run: echo "$GITHUB_CONTEXT"
-      - run: npm run version --dry-run
+      - run: npm run version 
   
 
       - name: Update
