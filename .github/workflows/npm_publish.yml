@@ -51,7 +51,6 @@ jobs:
         run: |
           git config --global user.email ${{ secrets.EMAIL }}
           git config --global user.name ${{ secrets.NAME }}
-          git pull
           rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
           git add -A 
           echo ${{ steps.step1.outputs.SVG }}
