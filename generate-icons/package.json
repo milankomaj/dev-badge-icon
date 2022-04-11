@@ -1,7 +1,7 @@
 {
   "name": "generate-icons",
   "version": "0.20.0",
-  "description": "Badgen's icons",
+  "description": "generates badge icons",
   "homepage": "https://github.com/milankomaj/dev-badge-icon/tree/main/generate-icons",
   "bugs": {
     "url": "https://github.com/milankomaj/dev-badge-icon/issues"
@@ -24,7 +24,6 @@
     "Test": "npm run fileTest",
     "file": "svgo --config=svgo.config.js  -i ./base64/*.svg -o ./base64/*.svg",
     "base64": "svgo --config=svgo.config.js --datauri=base64 -i ./base64/*.svg -o ./base64/.txt",
-    "SV": "svgo --multipass --config=svgo.config.js -f ./icons -o ./output",
     "Folder": "svgo --multipass --config=svgo.config.js -f ./icons -o ./output"
   },
   "dependencies": {

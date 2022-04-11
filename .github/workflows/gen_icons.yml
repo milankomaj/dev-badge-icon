@@ -9,9 +9,9 @@ jobs:
       run:
         working-directory: ./generate-icons
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
 
@@ -23,7 +23,7 @@ jobs:
          cat ${{ github.workspace }}/generate-icons/test.js
 
       - run: npm install --save       
-      - run:  npm run SV
+      - run:  npm run Folder
       - run:  npm run Test
 
       - name: tree 
