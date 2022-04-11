@@ -53,14 +53,15 @@ jobs:
           echo 1
           git pull
           git checkout -b dev
-          git push origin dev
-          
-          echo 2
-          rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
-          git add -A 
+                    git add -A 
           git tag ${{needs.build.outputs.output1}}
           git commit -m "${{needs.build.outputs.output1}} & ${{needs.build.outputs.output2}}"
           git status
           gh auth login --with-token ${{ secrets.TOKEN }}
           gh issue create --title "${{needs.build.outputs.output2}}" --label "documentation" --body "${{needs.build.outputs.output1}} & ${{needs.build.outputs.output2}}"
-          git push
+          git push origin dev
+          
+          echo 2
+          rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
+
+         
