@@ -1,6 +1,6 @@
 {
   "name": "dev-badge-icon",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "dev badge icons",
   "main": "index.js",
   "scripts": {
