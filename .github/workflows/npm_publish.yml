@@ -54,7 +54,9 @@ jobs:
           git pull
           rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
           git add -A 
+          echo ${{needs.build.outputs.output1}}
+          echo ${{needs.build.outputs.output2}}
           git tag ${{needs.build.outputs.output1}}
-          git commit -m "${{needs.build.outputs.output2}}"
+          git commit -m "${{needs.build.outputs.output1}}" & "${{needs.build.outputs.output2}}"
           git status
           git push
