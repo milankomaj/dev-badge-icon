@@ -1,6 +1,6 @@
 {
   "name": "dev-badge-icon",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "dev badge icons",
   "main": "index.js",
   "scripts": {
@@ -15,15 +15,16 @@
   ],
   "author": "eleonora",
   "license": "ISC",
-  "publishConfig": {"access": "public"},
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/milankomaj/dev-badge-icon",
-  "bugs": {"url": "https://github.com/milankomaj/dev-badge-icon/issues"},
+  "bugs": {
+    "url": "https://github.com/milankomaj/dev-badge-icon/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/milankomaj/dev-badge-icon.git",
     "directory": "dev-badge-icon"
   }
 }
-
-
-
