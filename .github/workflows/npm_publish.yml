@@ -16,7 +16,7 @@ jobs:
         working-directory: ./dev-badge-icon
     env:
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      # GITHUB_CONTEXT: ${{ toJson(github) }} 
+      # GITHUB_CONTEXT: ${{ toJson(github) }}
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
     steps:
@@ -29,23 +29,24 @@ jobs:
       - run: npm install --save
       - name: VERSION
         id: step1
-        shell: bash      
+        shell: bash
         run: |
           cd ${{ github.workspace }}/dev-badge-icon
-          VERSION=$(npm version patch)   
+          VERSION=$(npm version patch)
           echo VERSION=$VERSION
           echo $VERSION
-          echo "::set-output name=VERSION::$(echo $VERSION)"   
+          echo "::set-output name=VERSION::$(echo $VERSION)"
           SVG=$(find ${{ github.workspace }}/generate-icons/ -name '*.svg' -type f -printf "%f\n")
           echo SVG=$SVG
           echo $SVG
-          echo "::set-output name=SVG::$(echo $SVG)" 
+          echo "::set-output name=SVG::$(echo $SVG)"
       - run: npm ci
       - run: npm publish
       - run: npm version ${{ github.event.release.tag_name }}
       - run: echo "$GITHUB_CONTEXT"
-      - run: npm run version 
-  
+      - run: sleep 2m
+      - run: npm run version
+
 
       - name: Update
         shell: bash
@@ -53,7 +54,7 @@ jobs:
           git config --global user.email ${{ secrets.EMAIL }}
           git config --global user.name ${{ secrets.NAME }}
           rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
-          git add -A 
+          git add -A
           echo ${{ steps.step1.outputs.SVG }}
           echo ${{ steps.step1.outputs.VERSION }}
           git commit -m "${{ steps.step1.outputs.SVG }}"
