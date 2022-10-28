@@ -29,7 +29,7 @@ const config = {
     'removeNonInheritableGroupAttrs',
     'removeUselessStrokeAndFill',
     'removeUnusedNS',
-    'cleanupIDs',
+    'cleanupIds',
     'cleanupNumericValues',
     'moveElemsAttrsToGroup',
     'moveGroupAttrsToElems',
