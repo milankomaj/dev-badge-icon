@@ -27,6 +27,6 @@
     "Folder": "svgo --multipass --config=svgo.config.js -f ./icons -o ./output"
   },
   "dependencies": {
-    "svgo": "^2.8.0"
+    "svgo": "^3.0.0"
   }
 }
