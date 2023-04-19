@@ -70,8 +70,10 @@ strong {
         listItem.innerHTML += '&nbsp;' + Object.keys(json)[i].toUpperCase() + ': ';
         //listItem.innerHTML +=Object.entries(json)[i] + '**';
         //listItem.innerHTML +=Object.values(json)[i].height + '';
-        //listItem.innerHTML +='<strong>' + `<img  height="20" width="" src="https://dev-badge.eleonora.workers.dev/badge/${Item}/${Item}?icon=${Item}&style=flat">` ;
-        listItem.innerHTML +=
+        //listItem.innerHTML +='<strong>' + `<img  height="20" width="" src="https://dev-badge.eleonora.workers.dev/badge/${Item}/${Item}?icon=${Item}&style=flat">` ;        
+        listItem.innerHTML += '<strong>' + '<img alt="" height="20" width="" src="' + Base + '">' + '</strong>' + '&nbsp;';
+
+listItem.innerHTML +=
           `<svg width="164.04" height="24" viewBox="0 0 1367 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="${Item}">
             <title>${Item}</title>
             <g>
@@ -86,7 +88,6 @@ strong {
             </g>
             <image x="40" y="35" width="200" height="132" xlink:href="${Base}"/>
           </svg>` + '&nbsp;';
-        listItem.innerHTML += '<strong>' + '<img alt="" height="20" width="" src="' + Base + '">' + '</strong>' + '&nbsp;';
 
         List.appendChild(listItem);
       }
@@ -96,7 +97,7 @@ strong {
       //console.log(Object.values(json));
       //let map = new Map(Object.entries(json));
       //console.log(map);
-      for (const [key, value] of Object.entries(json)) { console.log(`${key} ${value.height}/${value.width} px`); };
+      for (const [key, value] of Object.entries(json)) { console.table(`${key}: ${value.height}/${value.width} px`); };
     })
 
     .catch(function (error) {

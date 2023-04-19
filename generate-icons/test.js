@@ -6,7 +6,6 @@ const { optimize } = require('svgo');
 const filepath = PATH.resolve(__dirname, 'icons/REPLACE');
 const config = {
   plugins: [
-    'cleanupAttrs',
     'removeDoctype',
     'removeXMLProcInst',
     'removeComments',
@@ -19,16 +18,19 @@ const config = {
     'removeHiddenElems',
     'removeEmptyText',
     'removeEmptyContainers',
+    'removeUnknownsAndDefaults',
+    'removeNonInheritableGroupAttrs',
+    'removeUselessStrokeAndFill',
+    'removeUnusedNS',
+    'removeOffCanvasPaths',
+    'removeDimensions',
     // 'removeViewBox',
+    'cleanupAttrs',
     'cleanupEnableBackground',
     'convertStyleToAttrs',
     'convertColors',
     'convertPathData',
     'convertTransform',
-    'removeUnknownsAndDefaults',
-    'removeNonInheritableGroupAttrs',
-    'removeUselessStrokeAndFill',
-    'removeUnusedNS',
     'cleanupIDs',
     'cleanupNumericValues',
     'moveElemsAttrsToGroup',
@@ -39,9 +41,9 @@ const config = {
     'mergeStyles',
     'convertShapeToPath',
     'sortAttrs',
-    'removeDimensions',
-    // { name: 'removeAttrs', params: { attrs: '(stroke|stroke-width|version|x|y|enable-background|space)' } },   
-    { name: 'removeAttrs', params: { attrs: '(version|x|y|enable-background|space)' } },
+    'reusePaths',
+    { name: 'removeAttrs', params: { attrs: '(stroke|stroke-width|version|x|y|enable-background|space|fill)' } },
+    { name: 'addAttributesToSVGElement', params: { attribute: 'fill="#fff"' } },
   ],
 };
 
@@ -54,13 +56,5 @@ FS.readFile(filepath, 'utf8', function (err, data) {
 
   console.log(result);
 
-  // {
-  //     // optimized SVG data string
-  //     data: '<svg width="10" height="20">test</svg>'
-  //     // additional info such as width/height
-  //     info: {
-  //         width: '10',
-  //         height: '20'
-  //     }
-  // }
+
 });

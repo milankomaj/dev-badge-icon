@@ -28,7 +28,7 @@ module.exports = {
     'moveElemsAttrsToGroup',
     'moveGroupAttrsToElems',
     'collapseGroups',
-    'removeRasterImages',
+    'removeRasterImages',  // xlink:href="data:image
     'mergePaths',
     'convertShapeToPath',
     'sortAttrs',
@@ -37,19 +37,8 @@ module.exports = {
     'removeOffCanvasPaths',
     'reusePaths',
     'mergeStyles',
-    {
-      name: 'removeAttrs',
-      params: {
-        attrs: '(version)'
-      }
-    },
-    //   {
-    //    name: 'addAttributesToSVGElement',
-    //    params: {
-    //      attributes: ['width="24"', 'height="24"']
-    //    },
-
-    //   }
+    { name: 'removeAttrs', params: { attrs: '(stroke|stroke-width|version|x|y|enable-background|space|fill)' } },
+    { name: 'addAttributesToSVGElement', params: { attribute: 'fill="#fff"' } }
 
   ]
 
