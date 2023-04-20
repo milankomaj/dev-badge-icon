@@ -31,7 +31,7 @@ const config = {
     'convertColors',
     'convertPathData',
     'convertTransform',
-    'cleanupIDs',
+    'cleanupIds',
     'cleanupNumericValues',
     'moveElemsAttrsToGroup',
     'moveGroupAttrsToElems',
