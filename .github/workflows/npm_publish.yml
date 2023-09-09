@@ -24,7 +24,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v3
         with:
