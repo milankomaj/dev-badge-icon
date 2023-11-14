@@ -37,7 +37,7 @@ module.exports = {
     'removeOffCanvasPaths',
     'reusePaths',
     'mergeStyles',
-    { name: 'removeAttrs', params: { attrs: '(stroke|stroke-width|version|x|y|enable-background|space|fill)' } },
+    { name: 'removeAttrs', params: { attrs: '(version|x|y|enable-background|space|fill)' } },
     { name: 'addAttributesToSVGElement', params: { attribute: 'fill="#fff"' } }
 
   ]
