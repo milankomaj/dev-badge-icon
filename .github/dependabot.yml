@@ -6,15 +6,9 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/dev-badge-icon" # Location of package manifests
-    versioning-strategy: increase
-    schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "10:00"
-      
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/generate-icons" # Location of package manifests
+    directories:
+      - "/generate-icons"
+      - "/dev-badge-icon" # Location of package manifests
     versioning-strategy: increase
     schedule:
       interval: "weekly"
