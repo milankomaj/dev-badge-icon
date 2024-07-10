@@ -1,9 +1,7 @@
 name: Publish Package to npmjs
 on:
   workflow_dispatch:
-  workflow_run:
-   workflows: ["Generate icons"]
-   types: [completed]
+
 
 jobs:
   build:
@@ -14,7 +12,7 @@ jobs:
       id-token: write
     outputs:
       output1: ${{ steps.step1.outputs.VERSION }}
-      output2: ${{ steps.step1.outputs.SVG }}
+      # output2: ${{ steps.step1.outputs.SVG }}
     defaults:
       run:
         working-directory: ./dev-badge-icon
@@ -28,7 +26,7 @@ jobs:
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v4
         with:
-          node-version: '16.x'
+          node-version: 'latest'
           registry-url: 'https://registry.npmjs.org'
       - run: npm install -g npm@latest
       - run: npm install --save
@@ -41,10 +39,10 @@ jobs:
           echo VERSION=$VERSION
           echo $VERSION
           echo "VERSION=$(echo $VERSION)" >> $GITHUB_OUTPUT
-          SVG=$(find ${{ github.workspace }}/generate-icons/ -name '*.svg' -type f -printf "%f\n")
-          echo SVG=$SVG
-          echo $SVG
-          echo "SVG=$(echo $SVG)" >> $GITHUB_OUTPUT
+          # SVG=$(find ${{ github.workspace }}/generate-icons/ -name '*.svg' -type f -printf "%f\n")
+          # echo SVG=$SVG
+          # echo $SVG
+          # echo "SVG=$(echo $SVG)" >> $GITHUB_OUTPUT
       - run: npm ci
       - run: npm publish
       - run: npm version ${{ github.event.release.tag_name }}
@@ -58,10 +56,10 @@ jobs:
         run: |
           git config --global user.email ${{ secrets.EMAIL }}
           git config --global user.name ${{ secrets.NAME }}
-          rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
+          # rm -fv ${{ github.workspace }}/generate-icons/icons/*.svg
           git add -A
-          echo ${{ steps.step1.outputs.SVG }}
+          # echo ${{ steps.step1.outputs.SVG }}
           echo ${{ steps.step1.outputs.VERSION }}
-          git commit -m "${{ steps.step1.outputs.SVG }}"
+          git commit -m "${{ steps.step1.outputs.VERSION}}"
           git status
           git push
