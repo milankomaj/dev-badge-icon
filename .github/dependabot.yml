@@ -9,13 +9,12 @@ updates:
     directories:
       - "/generate-icons"
       - "/dev-badge-icon" # Location of package manifests
-    versioning-strategy: increase
     schedule:
       interval: "weekly"
       day: "friday"
       time: "10:00"
-
-      
+    versioning-strategy: increase
+    
 # Set update schedule for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
