@@ -1,10 +1,10 @@
 ###### [![npm v. dev-badge-icon ][EXAMPLE BADGE]][NPM PAGE]
 
-*npm* | *bundlephobia* | *packagephobia* | *jsdelivr*
----: | ---: | ---: | ---:
-[![](https://dev-badge.eleonora.workers.dev/npm/dw/dev-badge-icon?icon=npm&style=flat&scale=1.2)][NPM PAGE] | [![BUNDLEPHOBIA dev-badge-icon ][BUNDLEPHOBIA BADGE]][BUNDLEPHOBIA PAGE] | [![PACKAGEPHOBIA dev-badge-icon ][PACKAGEPHOBIA BADGE]][PACKAGEPHOBIA PAGE] | [![JSDELIVR dev-badge-icon ][JSDELIVR BADGE]][JSDELIVR PAGE] |  
-[![](https://dev-badge.eleonora.workers.dev/npm/dm/dev-badge-icon?icon=npm&style=flat&scale=1.2)][NPM PAGE] | [![](https://dev-badge.eleonora.workers.dev/bundlephobia/min/dev-badge-icon?icon=bundlephobia&style=flat&scale=1.2)][BUNDLEPHOBIA PAGE] | [![](https://dev-badge.eleonora.workers.dev/packagephobia/publish/dev-badge-icon?icon=packagephobia&style=flat&scale=1.2)][PACKAGEPHOBIA PAGE] | [![](https://dev-badge.eleonora.workers.dev/jsdelivr/hits/month/npm/dev-badge-icon?icon=jsdelivr&style=flat&scale=1.2)][JSDELIVR PAGE] | 
-[![](https://dev-badge.eleonora.workers.dev/npm/dy/dev-badge-icon?icon=npm&style=flat&scale=1.2)][NPM PAGE] | [![](https://dev-badge.eleonora.workers.dev/bundlephobia/minzip/dev-badge-icon?icon=bundlephobia&style=flat&scale=1.2)][BUNDLEPHOBIA PAGE] | [![](https://dev-badge.eleonora.workers.dev/packagephobia/install/dev-badge-icon?icon=packagephobia&style=flat&scale=1.2)][PACKAGEPHOBIA PAGE] | [![](https://dev-badge.eleonora.workers.dev/jsdelivr/rank/month/npm/dev-badge-icon?icon=jsdelivr&style=flat&scale=1.2)][JSDELIVR PAGE] | 
+*npm* | *bundlephobia* | *jsdelivr*
+---: | ---: | ---: 
+[![](https://dev-badge.eleonora.workers.dev/npm/dw/dev-badge-icon?icon=npm&style=flat&scale=1.2)][NPM PAGE] | [![BUNDLEPHOBIA dev-badge-icon ][BUNDLEPHOBIA BADGE]][BUNDLEPHOBIA PAGE] | [![JSDELIVR dev-badge-icon ][JSDELIVR BADGE]][JSDELIVR PAGE] |  
+[![](https://dev-badge.eleonora.workers.dev/npm/dm/dev-badge-icon?icon=npm&style=flat&scale=1.2)][NPM PAGE] | [![](https://dev-badge.eleonora.workers.dev/bundlephobia/min/dev-badge-icon?icon=bundlephobia&style=flat&scale=1.2)][BUNDLEPHOBIA PAGE] | [![](https://dev-badge.eleonora.workers.dev/jsdelivr/hits/month/npm/dev-badge-icon?icon=jsdelivr&style=flat&scale=1.2)][JSDELIVR PAGE] | 
+[![](https://dev-badge.eleonora.workers.dev/npm/dy/dev-badge-icon?icon=npm&style=flat&scale=1.2)][NPM PAGE] | [![](https://dev-badge.eleonora.workers.dev/bundlephobia/minzip/dev-badge-icon?icon=bundlephobia&style=flat&scale=1.2)][BUNDLEPHOBIA PAGE] | [![](https://dev-badge.eleonora.workers.dev/jsdelivr/rank/month/npm/dev-badge-icon?icon=jsdelivr&style=flat&scale=1.2)][JSDELIVR PAGE] | 
 
 
 
